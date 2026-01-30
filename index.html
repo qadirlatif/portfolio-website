@@ -1,114 +1,261 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <!-- SEO Meta -->
-<meta name="description" content="Abdul Qadir Abdul Latif - Front-End Developer & UI/UX Designer Portfolio. متخصص في تطوير واجهات المستخدم وتجربة المستخدم.">
-<meta name="keywords" content="Abdul Qadir, Frontend Developer, UI UX Designer, HTML CSS JavaScript, Portfolio">
-<meta name="author" content="Abdul Qadir Abdul Latif">
-
-<!-- Open Graph (Social Sharing) -->
-<meta property="og:title" content="Abdul Qadir Abdul Latif - Portfolio">
-<meta property="og:description" content="Front-End Developer & UI/UX Designer Portfolio">
-<meta property="og:image" content="assets/images/profile.jpg">
-<meta property="og:type" content="website">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdul Qadir Abdul Latif - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Qadir Latif — Portfolio</title>
+  <meta name="description" content="Portfolio of Qadir Latif — web developer & designer" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="script/script.js"></script>
 </head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">QadirLatif</a>
 
-<body> <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Abdul Qadir Abdul Latif</div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger"> <span></span> <span></span> <span></span> </div>
-        </nav>
-    </header> <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Hello, I'm <span>Abdul Qadir Abdul Latif</span></h1>
-            <p>Software Engineer</p> <a href="#contact" class="btn">Get In
-                Touch</a>
+      <nav class="nav" id="nav" aria-label="Primary" aria-hidden="true">
+        <a href="#about">About</a>
+        <a href="#companies">Companies</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <button id="theme-toggle" aria-label="Toggle theme" aria-pressed="false">🌙</button>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home" aria-label="Intro">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Hi, I'm <span class="accent">Qadir</span></h1>
+          <p class="sub">I build delightful, accessible, and animated experiences on the web.</p>
+          <p class="typing">I create <span id="typed"></span><span class="cursor">|</span></p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#projects">View Work</a>
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </div>
         </div>
-        <div class="hero-image"> <img src="assets/images/profile.png" style="width: 100%;" alt="Profile Image"> </div>
-    </section> <!-- About Section -->
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate front-end developer with experience in building responsive and interactive websites using
-            HTML, CSS, and JavaScript.</p>
-    </section> <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <h2>Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>.NET Intern</h3> <span>Mubix Solutions | Sep 2023 - Mar 2024</span>
-                <p>Building responsive websites and creating smooth user experiences.</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Junior .NET Developer</h3> <span>Mubix Solutions | Mar 2024 - Jan 2025</span>
-                <p>Designed and prototyped modern user interfaces for multiple clients.</p>
-            </div>
-            <div class="timeline-item">
-                <h3>MTO - Software Developer</h3> <span>Bari Technology Solutions | Jan 2025 - Apr 2025</span>
-                <p>Designed and prototyped modern user interfaces for multiple clients.</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Associate Software Developer</h3> <span>Bari Technology Solutions | Apr 2025 - Present</span>
-                <p>Designed and prototyped modern user interfaces for multiple clients.</p>
-            </div>
+        <div class="hero-card" role="img" aria-label="Profile preview">
+          <div class="profile-frame">
+            <img src="assets/Images/Qadir.png" alt="Profile" />
+          </div>
         </div>
-    </section> <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <h2>Skills & Technologies</h2>
-        <div class="skills-grid">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">React</div>
-            <div class="skill">Flutter</div>
-            <div class="skill">Github</div>
-            <div class="skill">.NET</div>
-        </div>
-    </section> <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card"> <img src="assets/images/project1.png" alt="Project 1">
-                <h3>Netkom Connects - ERP</h3>
-                <p>Personal portfolio website built with HTML, CSS, and JS.</p> <a href="#" class="btn">View Project</a>
-            </div>
-            <div class="project-card"> <img src="assets/images/project2.jpg" alt="Project 2">
-                <h3>E-commerce Site</h3>
-                <p>Full-stack e-commerce website with responsive design.</p> <a href="#" class="btn">View Project</a>
-            </div>
-        </div>
-    </section> <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>Let's build something amazing together!</p>
-        <div class="socials"> <a href="#" target="_blank">LinkedIn</a> <a href="#" target="_blank">GitHub</a> <a
-                href="mailto:example@email.com">Email</a> </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0 C300,100 900,0 1200,80 L1200,120 L0,120 Z" fill="var(--bg)"></path></svg>
     </section>
-    <footer>
-        <p>© 2026 Abdul Qadir Abdul Latif. All rights reserved.</p>
-    </footer>
-    <script src="js/script.js"></script>
-</body>
 
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">About</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>Hello! I'm Qadir — a web developer focused on building thoughtful, responsive, and accessible user interfaces. I love animation, performance, and turning complex problems into delightful experiences.</p>
+            <p>I specialize in front-end development, progressive web apps, and component-driven design. Below are some selected projects, companies I've worked with, and my skills.</p>
+            <a class="btn" href="#contact">Work with me</a>
+          </div>
+          <div class="about-stats reveal">
+            <div class="stat">
+              <div class="stat-num">5+</div>
+              <div class="stat-label">Years experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">20+</div>
+              <div class="stat-label">Projects shipped</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Client satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Companies -->
+    <section class="section" id="companies">
+      <div class="container">
+        <h2 class="section-title reveal">Companies</h2>
+
+        <div class="companies-list reveal" id="companies-list">
+          <!-- Each company-card -->
+          <article class="company-card">
+            <div class="company-left">
+              <div class="company-logo" aria-hidden="true">Q</div>
+            </div>
+            <div class="company-body">
+              <div class="company-head">
+                <h3>Awesome Co</h3>
+                <div class="company-dates">Mar 2021 — Present</div>
+              </div>
+              <div class="company-role">Senior Frontend Engineer</div>
+              <p class="company-desc">Built component library, improved app performance, led UI upgrades and accessibility efforts.</p>
+            </div>
+          </article>
+
+          <article class="company-card">
+            <div class="company-left">
+              <div class="company-logo" aria-hidden="true">S</div>
+            </div>
+            <div class="company-body">
+              <div class="company-head">
+                <h3>Startup Studio</h3>
+                <div class="company-dates">Jan 2019 — Feb 2021</div>
+              </div>
+              <div class="company-role">Frontend Developer</div>
+              <p class="company-desc">Designed and shipped client-facing landing pages and dashboards, collaborated on product strategy.</p>
+            </div>
+          </article>
+
+          <!-- Add more company-card items as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card reveal" data-project="p1" tabindex="0" role="button" aria-pressed="false">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 1" />
+            </div>
+            <div class="project-body">
+              <h3>Project One</h3>
+              <p>Modern, performant landing page with subtle animations and accessible components.</p>
+              <div class="project-links">
+                <a class="chip" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="chip" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-project="p2" tabindex="0" role="button" aria-pressed="false">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 2" />
+            </div>
+            <div class="project-body">
+              <h3>Project Two</h3>
+              <p>An interactive dashboard with data visualizations and progressive enhancement.</p>
+              <div class="project-links">
+                <a class="chip" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="chip" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-project="p3" tabindex="0" role="button" aria-pressed="false">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 3" />
+            </div>
+            <div class="project-body">
+              <h3>Project Three</h3>
+              <p>Progressive web app with offline-first features and optimized caching strategies.</p>
+              <div class="project-links">
+                <a class="chip" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="chip" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="skills-grid reveal">
+          <div class="skill">
+            <div class="skill-name">HTML & CSS</div>
+            <div class="skill-bar"><span style="width:95%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar"><span style="width:90%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">React / Vue</div>
+            <div class="skill-bar"><span style="width:85%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">Design / Figma</div>
+            <div class="skill-bar"><span style="width:75%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <div class="contact-grid">
+          <form class="contact-form reveal" id="contact-form">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required placeholder="Your name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required placeholder="you@email.com" />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send message</button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-info reveal">
+            <h3>Let's build something great.</h3>
+            <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+            <p>Location: Your City, Country</p>
+            <div class="socials">
+              <a href="#" aria-label="GitHub">GitHub</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Qadir Latif — Built with care.</small>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" id="modal-close" aria-label="Close project">✕</button>
+      <div class="modal-content">
+        <div class="modal-media">
+          <button class="media-prev" aria-label="Previous media">‹</button>
+          <div class="media-viewer" id="media-viewer" aria-live="polite"></div>
+          <button class="media-next" aria-label="Next media">›</button>
+        </div>
+        <div class="modal-body">
+          <h3 id="modal-title">Project Title</h3>
+          <p id="modal-desc">Project description goes here.</p>
+          <div id="modal-links" class="modal-links"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
