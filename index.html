@@ -1,16 +1,19 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <!-- Primary metadata -->
   <title>Abdul Qadir Abdul Latif — Portfolio</title>
-  <meta name="description" content="Abdul Qadir Abdul Latif — web developer & designer. I build delightful, accessible and animated experiences on the web." />
-  <meta name="keywords" content="Abdul Qadir Abdul Latif, web developer, frontend, accessible web, progressive web app, UI, UX, animations" />
+  <meta name="description"
+    content="Abdul Qadir Abdul Latif — web developer & designer. I build delightful, accessible and animated experiences on the web." />
+  <meta name="keywords"
+    content="Abdul Qadir Abdul Latif, web developer, frontend, accessible web, progressive web app, UI, UX, animations" />
   <meta name="author" content="Abdul Qadir Abdul Latif" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://your-domain.example/" /> <!-- REPLACE with your production URL -->
+  <link rel="canonical" href="https://aqadir.dev/" /> <!-- REPLACE with your production URL -->
 
   <!-- Mobile / theme -->
   <meta name="theme-color" content="#0f172a" />
@@ -20,65 +23,69 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Abdul Qadir Abdul Latif — Portfolio" />
   <meta property="og:description" content="I build delightful, accessible and animated experiences on the web." />
-  <meta property="og:url" content="https://your-domain.example/" /> <!-- REPLACE -->
+  <meta property="og:url" content="https://aqadir.dev/" /> <!-- REPLACE -->
   <meta property="og:site_name" content="Abdul Qadir Abdul Latif" />
-  <meta property="og:image" content="https://your-domain.example/assets/social-preview.png" /> <!-- REPLACE with absolute URL to social preview image -->
+  <meta property="og:image" content="https://aqadir.dev/assets/social-preview.png" />
+  <!-- REPLACE with absolute URL to social preview image -->
   <meta property="og:image:alt" content="Abdul Qadir Abdul Latif — web developer" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Abdul Qadir Abdul Latif — Portfolio" />
   <meta name="twitter:description" content="I build delightful, accessible and animated experiences on the web." />
-  <meta name="twitter:image" content="https://your-domain.example/assets/social-preview.png" /> <!-- REPLACE -->
+  <meta name="twitter:image" content="https://aqadir.dev/assets/social-preview.png" /> <!-- REPLACE -->
   <meta name="twitter:creator" content="@your_twitter_handle" /> <!-- optional -->
 
   <!-- Favicons & Apple -->
   <link rel="icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="manifest" href="/site.webmanifest" />
   <meta name="msapplication-TileColor" content="#0f172a" />
 
   <!-- Performance hints -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+  <link rel="stylesheet" href="/css/style.css">
 
-  <!-- Optional: Analytics (replace MEASUREMENT_ID) -->
-  <!--
+  <!-- Google Analytics (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=MEASUREMENT_ID"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'MEASUREMENT_ID', { 'anonymize_ip': true });
-  </script>
-  -->
 
-  <!-- Structured data (JSON-LD) - replace URLs and social links -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Abdul Qadir Abdul Latif",
-    "url": "https://your-domain.example/",
-    "sameAs": [
-      "https://github.com/qadirlatif",
-      "https://www.linkedin.com/in/your-linkedin",
-      "https://twitter.com/your_twitter_handle"
-    ],
-    "jobTitle": "Frontend Engineer",
-    "image": "https://your-domain.example/assets/Images/Qadir.png",
-    "description": "Web developer focused on building thoughtful, responsive, and accessible user interfaces."
-  }
+    gtag('config', 'MEASUREMENT_ID', {
+      anonymize_ip: true
+    });
   </script>
+
+  <!-- Structured Data (SEO / Schema Markup) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Abdul Qadir Abdul Latif",
+  "url": "https://aqadir.dev/",
+  "sameAs": [
+    "https://github.com/qadirlatif",
+    "https://www.linkedin.com/in/abdul-qadir-latif"
+  ],
+  "jobTitle": "Frontend Engineer",
+  "image": "https://aqadir.dev/assets/Images/Qadir.png",
+  "description": "Web developer focused on building thoughtful, responsive, and accessible user interfaces."
+}
+</script>
+
 
   <meta name="twitter:widgets:theme" content="dark" />
 
   <script defer src="script/script.js"></script>
 </head>
+
 <body>
   <!-- Skip link for accessibility -->
-  <a class="skip-link" href="#main-content" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;" onfocus="this.style.left='8px';this.style.top='8px';this.style.width='auto';this.style.height='auto'">Skip to content</a>
+  <a class="skip-link" href="#main-content"
+    style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;"
+    onfocus="this.style.left='8px';this.style.top='8px';this.style.width='auto';this.style.height='auto'">Skip to
+    content</a>
 
   <header class="site-header" id="site-header">
     <div class="container header-inner">
@@ -118,15 +125,14 @@
         <div class="hero-card" role="img" aria-label="Profile preview">
           <div class="profile-frame">
             <!-- give profile image high priority and an absolute or CDN path for social sharing -->
-            <img src="assets/Images/Qadir.png"
-                 alt="Portrait of Abdul Qadir Abdul Latif"
-                 width="480" height="480"
-                 fetchpriority="high"
-                 style="max-width:100%;height:auto;display:block" />
+            <img src="assets/Images/Qadir.png" alt="Portrait of Abdul Qadir Abdul Latif" width="480" height="480"
+              fetchpriority="high" style="max-width:100%;height:auto;display:block" />
           </div>
         </div>
       </div>
-      <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0,0 C300,100 900,0 1200,80 L1200,120 L0,120 Z" fill="var(--bg)"></path></svg>
+      <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,0 C300,100 900,0 1200,80 L1200,120 L0,120 Z" fill="var(--bg)"></path>
+      </svg>
     </section>
 
     <!-- About -->
@@ -135,8 +141,10 @@
         <h2 class="section-title reveal">About</h2>
         <div class="about-grid">
           <div class="about-text reveal">
-            <p>Hello! I'm Abdul Qadir — a web developer focused on building thoughtful, responsive, and accessible user interfaces. I love animation, performance, and turning complex problems into delightful experiences.</p>
-            <p>I specialize in front-end development, progressive web apps, and component-driven design. Below are some selected projects, companies I've worked with, and my skills.</p>
+            <p>Hello! I'm Abdul Qadir — a web developer focused on building thoughtful, responsive, and accessible user
+              interfaces. I love animation, performance, and turning complex problems into delightful experiences.</p>
+            <p>I specialize in front-end development, progressive web apps, and component-driven design. Below are some
+              selected projects, companies I've worked with, and my skills.</p>
             <a class="btn" href="#contact">Work with me</a>
           </div>
           <div class="about-stats reveal" aria-hidden="false">
@@ -174,7 +182,8 @@
                 <div class="company-dates">Mar 2021 — Present</div>
               </div>
               <div class="company-role">Senior Frontend Engineer</div>
-              <p class="company-desc">Built component library, improved app performance, led UI upgrades and accessibility efforts.</p>
+              <p class="company-desc">Built component library, improved app performance, led UI upgrades and
+                accessibility efforts.</p>
             </div>
           </article>
 
@@ -188,7 +197,8 @@
                 <div class="company-dates">Jan 2019 — Feb 2021</div>
               </div>
               <div class="company-role">Frontend Developer</div>
-              <p class="company-desc">Designed and shipped client-facing landing pages and dashboards, collaborated on product strategy.</p>
+              <p class="company-desc">Designed and shipped client-facing landing pages and dashboards, collaborated on
+                product strategy.</p>
             </div>
           </article>
 
@@ -206,9 +216,7 @@
             <div class="project-media">
               <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
-                alt="Project 1 preview"
-                loading="lazy"
-                style="width:100%;height:auto;display:block" />
+                alt="Project 1 preview" loading="lazy" style="width:100%;height:auto;display:block" />
             </div>
             <div class="project-body">
               <h3>Project One</h3>
@@ -224,9 +232,7 @@
             <div class="project-media">
               <img
                 src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
-                alt="Project 2 preview"
-                loading="lazy"
-                style="width:100%;height:auto;display:block" />
+                alt="Project 2 preview" loading="lazy" style="width:100%;height:auto;display:block" />
             </div>
             <div class="project-body">
               <h3>Project Two</h3>
@@ -242,9 +248,7 @@
             <div class="project-media">
               <img
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
-                alt="Project 3 preview"
-                loading="lazy"
-                style="width:100%;height:auto;display:block" />
+                alt="Project 3 preview" loading="lazy" style="width:100%;height:auto;display:block" />
             </div>
             <div class="project-body">
               <h3>Project Three</h3>
@@ -311,9 +315,12 @@
             <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
             <p>Location: Your City, Country</p>
             <div class="socials" aria-label="Social links">
-              <a href="https://github.com/qadirlatif" aria-label="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com/in/your-linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href="https://twitter.com/your_twitter_handle" aria-label="Twitter" target="_blank" rel="noopener noreferrer">Twitter</a>
+              <a href="https://github.com/qadirlatif" aria-label="GitHub" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/your-linkedin" aria-label="LinkedIn" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://twitter.com/your_twitter_handle" aria-label="Twitter" target="_blank"
+                rel="noopener noreferrer">Twitter</a>
             </div>
           </div>
         </div>
@@ -349,7 +356,8 @@
 
   <!-- Minimal inline script for year fallback (keeps behavior if script/script.js hasn't run yet) -->
   <script>
-    (function(){ try{ var y = new Date().getFullYear(); document.getElementById('year').textContent = y; }catch(e){} })();
+    (function () { try { var y = new Date().getFullYear(); document.getElementById('year').textContent = y; } catch (e) { } })();
   </script>
 </body>
+
 </html>
