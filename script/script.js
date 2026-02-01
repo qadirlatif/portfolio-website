@@ -2,7 +2,15 @@
 document.addEventListener('DOMContentLoaded', () => {
   // typed text loop
   const typedEl = document.getElementById('typed');
-  const words = ['beautiful interfaces', 'accessible experiences', 'fast websites', 'delightful animations'];
+  const words = [
+  'scalable software solutions',
+  'C# and .NET applications',
+  'React and Flutter apps',
+  'ERP and shipping software',
+  'real-time messaging systems',
+  'high-quality code'
+];
+
   let i = 0, j = 0, forward = true;
   function tick(){
     const word = words[i];

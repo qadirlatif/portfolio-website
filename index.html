@@ -8,33 +8,34 @@
   <!-- Primary metadata -->
   <title>Abdul Qadir Abdul Latif — Portfolio</title>
   <meta name="description"
-    content="Abdul Qadir Abdul Latif — web developer & designer. I build delightful, accessible and animated experiences on the web." />
+    content="Abdul Qadir Abdul Latif — Software Engineer specializing in C#, .NET, React, and Flutter. I build scalable and high-quality software solutions." />
   <meta name="keywords"
-    content="Abdul Qadir Abdul Latif, web developer, frontend, accessible web, progressive web app, UI, UX, animations" />
+    content="Abdul Qadir Abdul Latif, software engineer, .NET, C#, React, Flutter, ERP, mobile app, web development" />
   <meta name="author" content="Abdul Qadir Abdul Latif" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://aqadir.dev/" /> <!-- REPLACE with your production URL -->
+  <link rel="canonical" href="https://aqadir.dev/" />
 
   <!-- Mobile / theme -->
   <meta name="theme-color" content="#0f172a" />
   <meta name="mobile-web-app-capable" content="yes" />
 
-  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Abdul Qadir Abdul Latif — Portfolio" />
-  <meta property="og:description" content="I build delightful, accessible and animated experiences on the web." />
-  <meta property="og:url" content="https://aqadir.dev/" /> <!-- REPLACE -->
+  <meta property="og:description"
+    content="Software Engineer specializing in C#, .NET, React, and Flutter. I deliver scalable and high-quality software solutions." />
+  <meta property="og:url" content="https://aqadir.dev/" />
   <meta property="og:site_name" content="Abdul Qadir Abdul Latif" />
   <meta property="og:image" content="https://aqadir.dev/assets/social-preview.png" />
-  <!-- REPLACE with absolute URL to social preview image -->
-  <meta property="og:image:alt" content="Abdul Qadir Abdul Latif — web developer" />
+  <meta property="og:image:alt" content="Abdul Qadir Abdul Latif — Software Engineer" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Abdul Qadir Abdul Latif — Portfolio" />
-  <meta name="twitter:description" content="I build delightful, accessible and animated experiences on the web." />
-  <meta name="twitter:image" content="https://aqadir.dev/assets/social-preview.png" /> <!-- REPLACE -->
-  <meta name="twitter:creator" content="@your_twitter_handle" /> <!-- optional -->
+  <meta name="twitter:description"
+    content="Software Engineer specializing in C#, .NET, React, and Flutter. I deliver scalable and high-quality software solutions." />
+  <meta name="twitter:image" content="https://aqadir.dev/assets/social-preview.png" />
+  <meta name="twitter:creator" content="@qadirlatif" />
 
   <!-- Favicons & Apple -->
   <link rel="icon" href="/favicon.ico" />
@@ -51,37 +52,31 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
-    gtag('config', 'MEASUREMENT_ID', {
-      anonymize_ip: true
-    });
+    gtag('config', 'MEASUREMENT_ID', { anonymize_ip: true });
   </script>
 
-  <!-- Structured Data (SEO / Schema Markup) -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Abdul Qadir Abdul Latif",
-  "url": "https://aqadir.dev/",
-  "sameAs": [
-    "https://github.com/qadirlatif",
-    "https://www.linkedin.com/in/abdul-qadir-latif"
-  ],
-  "jobTitle": "Frontend Engineer",
-  "image": "https://aqadir.dev/assets/Images/Qadir.png",
-  "description": "Web developer focused on building thoughtful, responsive, and accessible user interfaces."
-}
-</script>
-
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Abdul Qadir Abdul Latif",
+      "url": "https://aqadir.dev/",
+      "sameAs": [
+        "https://github.com/qadirlatif",
+        "https://www.linkedin.com/in/abdul-qadir-abdul-latif-8a1128256"
+      ],
+      "jobTitle": "Software Engineer",
+      "image": "https://aqadir.dev/assets/Images/Qadir.png",
+      "description": "Software Engineer specializing in C#, .NET, React, and Flutter, focused on building scalable and high-quality software solutions."
+    }
+  </script>
 
   <meta name="twitter:widgets:theme" content="dark" />
-
   <script defer src="script/script.js"></script>
 </head>
 
 <body>
-  <!-- Skip link for accessibility -->
   <a class="skip-link" href="#main-content"
     style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;"
     onfocus="this.style.left='8px';this.style.top='8px';this.style.width='auto';this.style.height='auto'">Skip to
@@ -90,16 +85,13 @@
   <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a class="logo" href="#home">AQ</a>
-
-      <!-- removed aria-hidden so screen readers can access navigation -->
       <nav class="nav" id="nav" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#companies">Companies</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-
       <div class="controls">
         <button id="theme-toggle" aria-label="Toggle theme" aria-pressed="false">🌙</button>
         <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
@@ -114,17 +106,15 @@
       <div class="container hero-inner">
         <div class="hero-copy">
           <h1>Hi, I'm <span class="accent">Abdul Qadir</span></h1>
-          <p class="sub">I build delightful, accessible, and animated experiences on the web.</p>
+          <p class="sub">Software Engineer | C#, .NET, React, Flutter</p>
           <p class="typing">I create <span id="typed"></span><span class="cursor" aria-hidden="true">|</span></p>
           <div class="hero-ctas">
             <a class="btn primary" href="#projects">View Work</a>
-            <a class="btn ghost" href="#contact">Get in touch</a>
+            <a class="btn ghost" href="#contact">Get in Touch</a>
           </div>
         </div>
-
         <div class="hero-card" role="img" aria-label="Profile preview">
           <div class="profile-frame">
-            <!-- give profile image high priority and an absolute or CDN path for social sharing -->
             <img src="assets/Images/Qadir.png" alt="Portrait of Abdul Qadir Abdul Latif" width="480" height="480"
               fetchpriority="high" style="max-width:100%;height:auto;display:block" />
           </div>
@@ -135,74 +125,81 @@
       </svg>
     </section>
 
-    <!-- About -->
+    <!-- About / Objective -->
     <section class="section" id="about">
       <div class="container">
-        <h2 class="section-title reveal">About</h2>
+        <h2 class="section-title reveal">About Me</h2>
         <div class="about-grid">
           <div class="about-text reveal">
-            <p>Hello! I'm Abdul Qadir — a web developer focused on building thoughtful, responsive, and accessible user
-              interfaces. I love animation, performance, and turning complex problems into delightful experiences.</p>
-            <p>I specialize in front-end development, progressive web apps, and component-driven design. Below are some
-              selected projects, companies I've worked with, and my skills.</p>
+            <p>Software Engineer specializing in C#, .NET (MVC & Core), React, and Flutter. Passionate about building
+              scalable applications, solving complex problems, and delivering high-quality software solutions that create
+              real business value.</p>
             <a class="btn" href="#contact">Work with me</a>
-          </div>
-          <div class="about-stats reveal" aria-hidden="false">
-            <div class="stat">
-              <div class="stat-num">5+</div>
-              <div class="stat-label">Years experience</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">20+</div>
-              <div class="stat-label">Projects shipped</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">100%</div>
-              <div class="stat-label">Client satisfaction</div>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Companies -->
-    <section class="section" id="companies">
+    <!-- Experience -->
+    <section class="section" id="experience">
       <div class="container">
-        <h2 class="section-title reveal">Companies</h2>
-
-        <div class="companies-list reveal" id="companies-list">
-          <!-- Each company-card -->
+        <h2 class="section-title reveal">Experience</h2>
+        <div class="companies-list reveal">
           <article class="company-card">
-            <div class="company-left">
-              <div class="company-logo" aria-hidden="true">Q</div>
-            </div>
             <div class="company-body">
               <div class="company-head">
-                <h3>Awesome Co</h3>
-                <div class="company-dates">Mar 2021 — Present</div>
+                <h3>Associate Software Developer | Bari Technology Solutions</h3>
+                <div class="company-dates">Apr 2025 – Present</div>
               </div>
-              <div class="company-role">Senior Frontend Engineer</div>
-              <p class="company-desc">Built component library, improved app performance, led UI upgrades and
-                accessibility efforts.</p>
+              <ul>
+                <li>Working on a live product handling real use cases.</li>
+                <li>Learned impact of small changes on the overall system.</li>
+                <li>Trained on another product with architecture analysis and bug fixing.</li>
+              </ul>
             </div>
           </article>
 
           <article class="company-card">
-            <div class="company-left">
-              <div class="company-logo" aria-hidden="true">S</div>
-            </div>
             <div class="company-body">
               <div class="company-head">
-                <h3>Startup Studio</h3>
-                <div class="company-dates">Jan 2019 — Feb 2021</div>
+                <h3>MTO – Software Developer | Bari Technology Solutions</h3>
+                <div class="company-dates">Jan 2025 – Mar 2025</div>
               </div>
-              <div class="company-role">Frontend Developer</div>
-              <p class="company-desc">Designed and shipped client-facing landing pages and dashboards, collaborated on
-                product strategy.</p>
+              <ul>
+                <li>Worked on production-ready software with .NET Core, React, REST APIs, and SQL.</li>
+                <li>Focused on debugging, optimization, and best practices.</li>
+                <li>Improved performance and reliability of existing modules.</li>
+              </ul>
             </div>
           </article>
 
-          <!-- Add more company-card items as needed -->
+          <article class="company-card">
+            <div class="company-body">
+              <div class="company-head">
+                <h3>Junior .NET Developer | Mubix Solutions</h3>
+                <div class="company-dates">Mar 2024 – Jan 2025</div>
+              </div>
+              <ul>
+                <li>Developed backend APIs for ERP and mobile apps with REST APIs.</li>
+                <li>Migrated services to .NET Core for better scalability.</li>
+                <li>Experience in API development, system integration, and backend optimization.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="company-card">
+            <div class="company-body">
+              <div class="company-head">
+                <h3>.NET MVC Intern | Mubix Solutions</h3>
+                <div class="company-dates">Sep 2023 – Mar 2024</div>
+              </div>
+              <ul>
+                <li>Backend development, database design, and API creation for ERP systems.</li>
+                <li>Built PWAs using Flutter for cross-platform usability.</li>
+                <li>Strengthened skills in scalable and reliable systems.</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -210,7 +207,7 @@
     <!-- Projects -->
     <section class="section" id="projects">
       <div class="container">
-        <h2 class="section-title reveal">Selected Projects</h2>
+        <h2 class="section-title reveal">Projects</h2>
         <div class="projects-grid">
           <article class="project-card reveal" data-project="p1" tabindex="0" role="button" aria-pressed="false">
             <div class="project-media">
@@ -269,20 +266,20 @@
         <h2 class="section-title reveal">Skills</h2>
         <div class="skills-grid reveal">
           <div class="skill">
-            <div class="skill-name">HTML & CSS</div>
+            <div class="skill-name">C#, .NET MVC & Core</div>
             <div class="skill-bar"><span style="width:95%"></span></div>
           </div>
           <div class="skill">
-            <div class="skill-name">JavaScript</div>
+            <div class="skill-name">React.js / Flutter</div>
             <div class="skill-bar"><span style="width:90%"></span></div>
           </div>
           <div class="skill">
-            <div class="skill-name">React / Vue</div>
+            <div class="skill-name">SQL Server / EF Core / ADO.NET</div>
             <div class="skill-bar"><span style="width:85%"></span></div>
           </div>
           <div class="skill">
-            <div class="skill-name">Design / Figma</div>
-            <div class="skill-bar"><span style="width:75%"></span></div>
+            <div class="skill-name">HTML, CSS, JS, AJAX, JQuery</div>
+            <div class="skill-bar"><span style="width:80%"></span></div>
           </div>
         </div>
       </div>
@@ -312,15 +309,14 @@
 
           <div class="contact-info reveal">
             <h3>Let's build something great.</h3>
-            <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-            <p>Location: Your City, Country</p>
+            <p>Email: <a href="mailto:abdulqadir.aboobakar@gmail.com">abdulqadir.aboobakar@gmail.com</a></p>
+            <p>Phone: 03361112803, 03361112801</p>
+            <p>Location: Karachi, Pakistan</p>
             <div class="socials" aria-label="Social links">
               <a href="https://github.com/qadirlatif" aria-label="GitHub" target="_blank"
                 rel="noopener noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com/in/your-linkedin" aria-label="LinkedIn" target="_blank"
-                rel="noopener noreferrer">LinkedIn</a>
-              <a href="https://twitter.com/your_twitter_handle" aria-label="Twitter" target="_blank"
-                rel="noopener noreferrer">Twitter</a>
+              <a href="https://www.linkedin.com/in/abdul-qadir-abdul-latif-8a1128256" aria-label="LinkedIn"
+                target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
           </div>
         </div>
