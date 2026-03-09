@@ -59,27 +59,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
   const saved = localStorage.getItem('theme'); // "light" or "dark"
 
-  function applyTheme(theme){
-    if(theme === 'light') {
-      body.classList.add('light');
-      themeBtn.textContent = '🌞';
-      themeBtn.setAttribute('aria-pressed','true');
-    } else {
-      body.classList.remove('light');
-      themeBtn.textContent = '🌙';
-      themeBtn.setAttribute('aria-pressed','false');
-    }
-  }
+  // function applyTheme(theme){
+  //   if(theme === 'light') {
+  //     body.classList.add('light');
+  //     themeBtn.textContent = '🌞';
+  //     themeBtn.setAttribute('aria-pressed','true');
+  //   } else {
+  //     body.classList.remove('light');
+  //     themeBtn.textContent = '🌙';
+  //     themeBtn.setAttribute('aria-pressed','false');
+  //   }
+  // }
 
-  const initial = saved ? saved : (prefersLight ? 'light' : 'dark');
-  applyTheme(initial);
+  // const initial = saved ? saved : (prefersLight ? 'light' : 'dark');
+  // applyTheme(initial);
 
-  themeBtn.addEventListener('click', () => {
-    const isLight = body.classList.toggle('light');
-    const theme = isLight ? 'light' : 'dark';
-    applyTheme(theme);
-    localStorage.setItem('theme', theme);
-  });
+  // themeBtn.addEventListener('click', () => {
+  //   const isLight = body.classList.toggle('light');
+  //   const theme = isLight ? 'light' : 'dark';
+  //   applyTheme(theme);
+  //   localStorage.setItem('theme', theme);
+  // });
 
   // MOBILE NAV (hamburger) - toggles header.open and accessibility attributes
   const burger = document.getElementById('burger');
