@@ -176,7 +176,7 @@ body{
   width:48px; height:48px; border-radius:10px; display:flex; align-items:center; justify-content:center;
   background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#fff; font-weight:700;
 }
-.company-head{display:flex; gap:1rem; align-items:baseline; justify-content:space-between}
+.company-head{ align-items:baseline;}
 .company-dates{color:var(--muted); font-size:.9rem}
 .company-role{font-weight:600; margin-top:.25rem}
 .company-desc{color:var(--muted); margin-top:.4rem}
@@ -463,4 +463,40 @@ transition:0.3s;
 
 .btn:hover{
 background:#0284c7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.company-head h3{
+  margin-bottom: 0px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* mobile responsive */
+@media (max-width: 768px) {
+  .two-column {
+    grid-template-columns: 1fr;
+  }
 }
